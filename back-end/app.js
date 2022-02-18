@@ -9,10 +9,14 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // Parse incoming JSON
 
+const jewelryController = require('./controller/jewelryController');
+
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.status(200).send("Welcome to our World of Lux!");
 });
+
+// app.use('/test', jewelryController)
 
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
