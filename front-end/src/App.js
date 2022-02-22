@@ -1,30 +1,28 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-const API = process.env.REACT_APP_API_URL;
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import Nav from './components/navBar/Nav';
+import Home from './components/home/Home';
+import CreateJewelry from './components/createJewelry/CreateJewelry';
+import JewelryDetails from './components/JewelryDetails/JewelryDetails';
+import JewelryEdit from './components/jewelryEdit/JewelryEdit';
 
-console.log(API);
+
 function App() {
-  const [days, setDays] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`${API}/test`)
-      .then(
-        (response) => {
-          setDays(response.data);
-        },
-        (error) => console.log("get", error)
-      )
-      .catch((c) => console.warn("catch", c));
-  }, []);
-  return (
-    <div>
-      <ul>
-        {days.map((day) => (
-          <li key={day.name}>{day.name}</li>
-        ))}
-      </ul>
+    return (
+    <div className='App'>
+        
+            <Nav />
+            <main className='body'>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/CreateJewelry" element={<CreateJewelry />} />
+                    <Route path="/JewelryDetails/:id" element={<JewelryDetails />} />
+                    <Route path="/transaction/:id/edit" element={<JewelryEdit />} />
+                </Routes>
+            </main>
+
+
     </div>
-  );
-}
+    )
+};
 
 export default App;
