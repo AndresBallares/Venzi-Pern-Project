@@ -1,18 +1,16 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./Nav.css";
 
 
 class NavBar extends Component {
     render () {
         return (
             <nav className="navbar">
-                <h1 className="t">
-                    <Link to="/songs">Song List</Link>
-                </h1>
-                
+                <img src="file:///Users/maurolozano/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos" alt="logo" />
+                    
                 <button className="button">
-                <Link to="/songs/new">NEW</Link>
+                <Link to="/jewelry/CreateJewelry">Customize</Link>
                 </button>
                 
             </nav>
