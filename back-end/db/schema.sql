@@ -3,9 +3,13 @@ CREATE DATABASE cta_dev;
 
 \c cta_dev;
 
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS jewelry;
 
-CREATE TABLE test (
+CREATE TABLE jewelry (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    category TEXT,
+    description TEXT NOT NULL,
+    price INT,
+    image TEXT,
 );
