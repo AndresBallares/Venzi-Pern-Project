@@ -44,7 +44,7 @@ const deleteJewel = async (id) => {
 };
 
 
-const updateJewel = async (id) => {
+const updateJewel = async (id, jewelry) => {
     try {
         let { name, category, description, price, image } = jewelry;
         const updatedJewel = await db.one(

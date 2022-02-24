@@ -15,7 +15,7 @@ function Home () {
             setPiece(response.data);
 
         })
-    }, []);
+    }, [URL]);
 
 
         return (
