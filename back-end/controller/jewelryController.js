@@ -22,13 +22,13 @@ jewelry.post("/", async (request, response) => {
 });
 
 jewelry.delete("/:id", async (request, response) => {
-    const { id } = request.params;
-    const jewel = await deleteJewel(id);
-    if(jewel.id) {
-        response.status(200).json(jewel);
-    } else {
-        response.status(404).json("Jewel Not Found");
-    }
+    try {
+        const { id } = request.params;
+        const jewel = await deleteJewel(id);
+            response.status(200).json(jewel);
+        } catch (error) {
+            response.status(404).json("Jewel Not Found");
+        }
 });
 
 jewelry.put("/:id", async (request, response) => {
