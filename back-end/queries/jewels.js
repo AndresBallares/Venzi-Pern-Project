@@ -3,7 +3,7 @@ const db = require('../db/dbConfig');
 const getAllJewels = async () => {
     try {
         const jewel = await db.any('SELECT * FROM jewelry');
-        return jewel
+        return jewel;
     } catch (err) {
         return err;
     }
@@ -22,7 +22,7 @@ const createJewelry = async (jewelry) => {
     let { name, category, description, price, image } = jewelry;
     try {
         const newJewel = await db.one (
-            "INSERT INTO jewelry ( name, category, description, price ) VALUES ($1, $2, $3, $4, $5,) RETURNING * ",
+            "INSERT INTO jewelry ( name, category, description, price, image, ) VALUES ($1, $2, $3, $4, $5,) RETURNING * ",
             [ name, category, description, price, image ]
             );
             return newJewel;

@@ -1,6 +1,7 @@
 // DEPENDENCIES
 const cors = require("cors");
 const express = require("express");
+const PORT = process.env.PORT || 8080;
 
 // CONFIGURATION
 const app = express();
@@ -17,7 +18,7 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome to our World of Lux!");
 });
 
-app.use('/jewelry', jewelryController)
+app.use("/jewelry", jewelryController)
 
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
