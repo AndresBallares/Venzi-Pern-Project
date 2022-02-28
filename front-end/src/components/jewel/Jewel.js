@@ -2,31 +2,31 @@ import { Link } from "react-router-dom";
 
 function Jewel({ piece }) {
     return (
-    <tr>
-        <td>
-        {/* <img src="file:///Users/maurolozano/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos" alt="jewelry" /> */}
-        </td>    
+    <div className="piece">
+        <div>
+        <img src="https://imgs-s1.jewelryimages.net/vendor-jewelry-images/galleries/colormerchants/1x1/RM1503-07.jpg?v=14" alt="jewelry" />
+        </div>    
     
-        <td>
-            {/* <Link to={'/JewelryDetails/:id '}>{element.name}</Link> */}
-        </td>   
+        <p>
+            <Link to={'/Jewelry/${piece.id}'}>{piece.name}</Link>
+        </p>   
     
     
-        <td>
+        <p>
             {piece.description}
-        </td>
+        </p>
     
-        <td>
-            {piece.price}
-        </td>
+        <p>
+            ${piece.price}
+        </p>
     
-    {/* <td>
-        <Link to={`/jewelry/${id}`}>
-        <button type="button" class="btn btn-outline-info">Add to Cart</button>
-        </Link>
+        <div>
+            <Link to={`/jewelry/${piece.id}`}>
+            <button type="button" class="btn btn-outline-info">Add to Cart</button>
+            </Link>
 
-    </td> */}
-    </tr>
+        </div>
+    </div>
     );
 }
 

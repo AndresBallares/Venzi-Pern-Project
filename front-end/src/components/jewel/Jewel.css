@@ -1,0 +1,5 @@
+.piece {
+    min-width: 160px;
+    background-color: lightgrey;
+    border-radius: 5px;
+}

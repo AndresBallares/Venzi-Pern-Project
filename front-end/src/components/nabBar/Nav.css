@@ -1,4 +1,16 @@
 .navbar {
-    background-color: aquamarine;
+    background-color: lightblue;
     
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: space-evenly;
 }

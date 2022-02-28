@@ -7,8 +7,8 @@ function Home () {
     const [piece, setPiece] = useState([]);
     
 
-    useEffect(() => {
-        axios
+    useEffect(async () => {
+        await axios
         .get(`${URL}/jewelry`)
         .then((response) => {
             console.log(response.data);
