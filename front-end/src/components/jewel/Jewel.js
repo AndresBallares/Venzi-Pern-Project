@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
 
-function Jewel({ element }) {
+function Jewel({ piece }) {
     return (
     <tr>
         <td>
-        <img src="file:///Users/maurolozano/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos" alt="jewelry" />
+        {/* <img src="file:///Users/maurolozano/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos" alt="jewelry" /> */}
         </td>    
     
         <td>
-            <Link to={'/JewelryDetails/:id '}>{element.name}</Link>
+            {/* <Link to={'/JewelryDetails/:id '}>{element.name}</Link> */}
         </td>   
     
     
         <td>
-            {element.description}
+            {piece.description}
         </td>
     
         <td>
-            {element.price}
+            {piece.price}
         </td>
     
     {/* <td>
