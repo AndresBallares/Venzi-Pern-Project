@@ -35,7 +35,7 @@ const CreateJewelry = () => {
     const { image, name, category, description, price,  } = piece;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="create" onSubmit={handleSubmit}>
             <label htmlFor="image">image</label>
             <input 
             type="text" 
@@ -77,7 +77,7 @@ const CreateJewelry = () => {
             />
             <br />
 
-            <label htmlFor="price">price</label>
+            <label htmlFor="price">Price</label>
             <input 
             type="text" 
             value={price}
@@ -89,7 +89,7 @@ const CreateJewelry = () => {
             
 
 
-            <button handleSubmit={handleSubmit}>Submit</button>
+            <button className="unique" handleSubmit={handleSubmit}>Submit</button>
             
 
         </form>

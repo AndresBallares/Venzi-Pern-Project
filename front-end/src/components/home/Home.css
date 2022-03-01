@@ -1,3 +1,5 @@
 .display {
-    justify-content: flex-start;
+    display: flex;
+    gap: 20px;
+    column-gap:70px;
 }
