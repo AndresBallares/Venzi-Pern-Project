@@ -8,7 +8,7 @@ function Jewel({ piece }) {
         </div>    
     
         <p>
-            <Link to={'/Jewelry/${piece.id}'}>{piece.name}</Link>
+            {piece.name}
         </p>   
     
     
@@ -22,7 +22,7 @@ function Jewel({ piece }) {
     
         <div>
             <Link to={`/jewelry/${piece.id}`}>
-            <button type="button" class="btn btn-outline-info">Add to Cart</button>
+            <button type="button" class="btn btn-outline-info">See Details</button>
             </Link>
 
         </div>

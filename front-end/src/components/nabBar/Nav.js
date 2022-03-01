@@ -12,7 +12,7 @@ const NavBar = () => {
             
                     
                 <button>
-                <Link to="/CreateJewelry">Customize</Link>
+                <Link to="/CreateJewelry">Add Jewel</Link>
                 </button>
                 
             </nav>
