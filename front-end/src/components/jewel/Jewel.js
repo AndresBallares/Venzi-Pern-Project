@@ -4,7 +4,7 @@ function Jewel({ piece }) {
     return (
     <div className="piece">
         <div>
-        <img src="https://imgs-s1.jewelryimages.net/vendor-jewelry-images/galleries/colormerchants/1x1/RM1503-07.jpg?v=14" alt="jewelry" />
+        <img src={piece.image} alt={piece.name} />
         </div>    
     
         <p>

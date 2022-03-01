@@ -1,16 +1,24 @@
 .navbar {
-    background-color: lightblue;
+    justify-content: center;
     
 }
 
-nav {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    padding: 8px;
-    margin: 10px;
+
+.navbutton {
+    background-color: white;
+    border: 2px solid gold;
+    color: black;
+    border-radius: 4px;
+    height: 40px;
+    padding-right: 32px;
+    justify-content: right;
+    text-align: center;
 }
 
-button {
-    display: flex;
-    justify-content: space-evenly;
+.navbutton:hover {
+    background-color: gold;
+    color: black;
+}
+.logo {
+    text-align:  center;
 }
