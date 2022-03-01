@@ -1,0 +1,26 @@
+.form {
+    margin: 400px;
+    margin-top: auto;
+}
+
+label {
+    padding-top: 150px;
+}
+
+input {
+
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.bottom {
+    background-color: white;
+    color: black;
+    border: 2px solid gold;
+    font-size: 15px;
+}
+
+.bottom:hover {
+    background-color: gold;
+    color: white;
+}

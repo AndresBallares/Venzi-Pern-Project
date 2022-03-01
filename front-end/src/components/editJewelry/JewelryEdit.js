@@ -40,7 +40,7 @@ const JewelryEdit = () => {
     const { name, category, description, price, image, } = piece;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form  className="form" onSubmit={handleSubmit}>
             <div>
             <label htmlFor="name">Name</label>
             <br />
@@ -53,7 +53,7 @@ const JewelryEdit = () => {
             </div>
             
             <div>
-            <label htmlFor="category">category</label>
+            <label htmlFor="category">Category</label>
             <br />
             <input 
             type="text" 
@@ -64,7 +64,7 @@ const JewelryEdit = () => {
             </div>
             
             <div>
-            <label htmlFor="description">description</label>
+            <label htmlFor="description">Description</label>
             <br />
             <input 
             type="text" 
@@ -75,7 +75,7 @@ const JewelryEdit = () => {
             </div>
 
             <div>
-            <label htmlFor="price">price</label>
+            <label htmlFor="price">Price</label>
             <br />
             <input 
             type="text" 
@@ -96,8 +96,8 @@ const JewelryEdit = () => {
             />
             </div>
             <br />
-            <input type="submit" value="submit" />
-            <input type="submit" value="nevermind" onClick={() => navigate('/')} />
+            <input className="bottom" type="submit" value="Submit" />
+            <input className="bottom" type="submit" value="Nevermind" onClick={() => navigate('/')} />
 
         </form>
 )

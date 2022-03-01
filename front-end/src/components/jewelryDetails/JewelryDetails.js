@@ -15,6 +15,7 @@ const JewelryDetails = () => {
         axios
         .get(`${URL}/jewelry/${id}`)
         .then((response) => {
+            console.log(response.data)
             setPiece(response.data);
             
         })
@@ -34,10 +35,10 @@ const JewelryDetails = () => {
         <div>
             <img src={`${image}`} alt={name} />
         </div>
-        <div>{name}</div>
+        <p>{name}</p>
         <p>{category}</p>
         <p>{description}</p>
-        <p>{price}</p>
+        <p>${price}</p>
         
         <Link to={`/jewelry/${id}/edit`}>
             <button>Edit</button>

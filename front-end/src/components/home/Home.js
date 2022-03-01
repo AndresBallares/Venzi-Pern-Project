@@ -21,12 +21,12 @@ function Home () {
         return (
             <div className="display">
 
-                    <table>
-                        <tbody>
+                    
+                    
                             {piece.map((element) => {
                             return <Jewel key={element.id} piece={element}  /> })}
-                        </tbody>
-                    </table>
+                        
+                    
 
             </div>
         )

@@ -8,6 +8,8 @@ import "./components/jewel/Jewel.css";
 import "./components/jewelryDetails/JewelryDetails.css";
 import "./components/nabBar/Nav.css";
 import "./components/createJewelry/CreateJewelry.css";
+import "./components/home/Home.css";
+import "./components/editJewelry/JewelryEdit.css";
 
 
 function App() {
